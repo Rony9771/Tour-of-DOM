@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="sytles/style.css">
+
+  <style>
+    
+    .f1{
+      color: red;
+    }
+    #li-dom{
+      color:aqua;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1 class="f1">This is my first DOM</h1> 
+  </header>
+  <main id="main-content">
+    <section>
+    <h2>My DOM data</h2>
+    <ul class="dom">
+      <li>Ata</li>
+      <li id="li-dom">moyda</li>
+      <li>Suji</li>
+      <li>Teer</li>
+    </ul>
+  </section>
+  <section>
+    <h2>My DOM-2 data</h2>
+    <ul class="dom-2">
+      <li>Ata</li>
+      <li>moyda</li>
+      <li>Suji</li>
+      <li>Teer</li>
+    </ul>
+  </section>
+  <section id="dom-33">
+    <h2>My DOM-3 data</h2>
+    <ul id="dom-3">
+      <li>Ata</li>
+      <li>moyda</li>
+      <li>Suji</li>
+      <li>Teer</li>
+    </ul>
+  </section>
+
+  </main>
+  <script src="js/append.js"></script>
+  <script src="js/dom.js"></script>
+  <script>
+    //console.log("DOM DOM DOM ALUR DOM");
+
+    const allaHeader = document.getElementsByTagName('h1');
+    for (const h1 of allaHeader){
+     // console.log(h1.innerHTML);
+    }
+    const allLi = document.getElementsByTagName('li');
+    for (let li of allLi){
+      //console.log(li);
+    }
+    const allLi2 = document.getElementsByTagName('li');
+    for (let li of allLi2){
+      //console.log(li.innerText);
+    }
+  
+    
+  </script>
+</body>
+</html>
